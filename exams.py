@@ -5,10 +5,10 @@ atten = int(input("enter the attendance of the student: "))
 if medical_cause == 'Y': 
   print ("You are allowed")
   
-elif medical_cause == "n":
+elif medical_cause == "N":
     if atten >= 75:
         print("allowed")
-    else:
+    else: 
         print("not allowed")
         
 else:
