@@ -11,21 +11,21 @@ while t > 0 :
     t = t//10
     
 if  numlen >= 4:
-       numlen = numlen // 2
+    numlen = numlen // 2
        
-       chk = 0
+    chk = 0
        
-       while num > 0:
-           ram = num % 10
+    while num > 0:
+        ram = num % 10
            
-           if chk == numlen:
-               midone = ram
-           elif chk == (numlen - 1):
-               midtwo = ram
+        if chk == numlen:
+            midone = ram
+        elif chk == (numlen - 1):
+            midtwo = ram
                
-           num = int(num/10)
+        num = int(num/10)
             
-           chk = chk + 1    
+        chk = chk + 1    
            
 prod = midone * midtwo
        
