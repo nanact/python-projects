@@ -41,3 +41,6 @@ elif chocie == "x" or chocie == "*":
     
 elif chocie == "/":
     print(division(a, b))
+    
+else:
+    print("ERROR")
