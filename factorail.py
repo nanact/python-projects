@@ -1,4 +1,5 @@
 
+#the product of an integer and all the integers below it
 
 def factorial(x):
     '''This is a recusize function to find the factorail of an number'''
@@ -8,7 +9,8 @@ def factorial(x):
     
     else:
         return x*factorial(x - 1)
-    
+  
+#doc is to call the single quotation in the fun  
 print(factorial.__doc__)
 
 print("the factorail of 0 is ",factorial(0))
