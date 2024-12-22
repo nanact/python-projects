@@ -1,8 +1,6 @@
-def well_wishing():
-    print("hello")
-    print("how are you")
 
-
-    
-well_wishing()
-
+class student:
+  grade = 10
+  print("Hi I am a grade " , grade)
+  
+od = student()
