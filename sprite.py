@@ -33,35 +33,35 @@ def main():
             if event.type == game.QUIT:
                 done = True
                 
-            pressend = game.key.get_pressed()
+        pressend = game.key.get_pressed()
             
-            if pressend[game.K_LEFT]: x -= 3
-            if pressend[game.K_RIGHT]: x += 3
-            if pressend[game.K_UP]: y += 3
-            if pressend[game.K_DOWN]: y -= 3
+        if pressend[game.K_a]: x -= 3
+        if pressend[game.K_d]: x += 3
+        if pressend[game.K_w]: y += 3
+        if pressend[game.K_s]: y -= 3
             
-            x = min (max(0 , x) , screen_width - spritewidth)
+        x = min (max(0 , x) , screen_width - spritewidth)
             
-            y = min(max(0, y), screen_height - spriteheight)
+        y = min(max(0, y), screen_height - spriteheight)
             
-            if x == 0 : current_color = colour["blue"]
+        if x == 0 : current_color = colour["blue"]
             
-            elif x == screen_width - spritewidth: colour["red"]
+        elif x == screen_width - spritewidth:  current_color = colour["red"]
             
-            elif y == 0: colour["green"]
+        elif y == 0: current_color = colour["green"]
             
-            elif y == screen_height - spriteheight: colour["yellow"]
+        elif y == screen_height - spriteheight:current_color = colour["yellow"]
             
-            else: colour["white"]
+        else: current_color = colour["white"]
             
-            screen.fill((0,0,0))
+        screen.fill((0,0,0))
             
-            game.draw.rect(screen, current_color, (x , y , spritewidth, spriteheight))
+        game.draw.rect(screen, current_color, (x , y , spritewidth, spriteheight))
             
-            game.display.flip()
+        game.display.flip()
             
-            clock.tick(90)
-        game.quit()
+        clock.tick(90)
+    game.quit()
         
 main()
             
