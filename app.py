@@ -1,5 +1,5 @@
 import tkinter as tk  
-import tkinter as tkk
+from tkinter import ttk
 from datetime import date
 
 def result():
@@ -23,11 +23,11 @@ ina = tk.Label(text = "Hi")
 
 name = tk.Label(text="Your full name", bg = "blue", fg = "white")
 
-full_name_input = tkk.Entry()
+full_name_input = ttk.Entry()
 
-submit = tkk.Button(text = "submit", command=result)
+submit = ttk.Button(text = "submit", command=result)
 
-text_box = tkk.Text(state="normal")
+text_box = tk.Text(state="normal")
 
 ina.pack()
 
