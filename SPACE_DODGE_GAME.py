@@ -21,7 +21,8 @@ game.init()
 
 screen = game.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
 
-Background = game.image.load("background.png")
+Background = game.image.load("c:\Users\Nana\Desktop\nana ct's youtube channel\my stuff/c++ project/python-projects/background.png")
+
 
 game.display.set_caption("Space_invader")
 
