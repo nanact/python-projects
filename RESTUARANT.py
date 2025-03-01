@@ -1,4 +1,4 @@
-from tkinter import *
+import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk   
 
@@ -20,7 +20,7 @@ class RestaurantOrderManagerment:
         }
         
         frame = ttk.Frame(root)
-        frame.place(relx = 0.5, rely = 0.5,anchor = CENTER)
+        frame.place(relx = 0.5, rely = 0.5,anchor = tk.CENTER)
         
         ttk.Label(frame,text = "Restaurant Order Managerment").grid(row = 0, columnspan=3)
         self.menu_label = {}
@@ -59,7 +59,7 @@ class RestaurantOrderManagerment:
                 messagebox.showerror("Error", "place order at least one item.")
 
 if __name__ == "__main__":
-    root = Tk()
+    root = tk.Tk()
     app = RestaurantOrderManagerment(root)
     root.geometry("600x300")
     root.mainloop()
