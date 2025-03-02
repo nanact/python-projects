@@ -27,9 +27,11 @@ class RestaurantOrderManagerment:
         self.menu_quantities = {}
         
         for i, (item, price) in enumerate(self.menu_items.items(), start = 1):
-            label = ttk.Label(frame, text = f"{item} (s{price}):",)
-            label.grid(row= 1, column=0)
+            label = ttk.Label(frame, text = f"{item} (${price}):",)
+            label.grid(row= i, column=0)
             quantity_entry = ttk.Entry(frame, width=5)
+            quantity_entry.grid(row = i, column=1)
+            self.menu_quantities[item] = quantity_entry
         order_button = ttk.Button(frame,text = "place order",command=self.place_order)
         
         order_button.grid(row = len(self.menu_items) + 5, columnspan = 8)
