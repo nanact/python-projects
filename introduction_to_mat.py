@@ -11,7 +11,7 @@ for x in student_marks:
 print(marks_perc)
 
 def marks_line_chart():
-    plt.plot(students_names,student_marks,mec = "r",ms = 9,linewidth = "20.5",color = "r",linestyle = "-.")
+    plt.plot(students_names,student_marks,mec = "r",ms = 9,linewidth = "20.5",color = "pink",linestyle = "-.")
     plt.title("Students Marks Graph")
     plt.xlabel("Student Names")
     plt.ylabel("Student Marks")
